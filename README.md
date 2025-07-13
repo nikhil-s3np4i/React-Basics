@@ -1,1 +1,1 @@
-Learning React from baiscs
+Learning React from basics
