@@ -1,3 +1,4 @@
+import Student from "./student"
 
 function App() {
 
@@ -9,7 +10,11 @@ function App() {
         <PostComponent />
       </div>
       <ProfileCardComponent />
+      <Student name="Nikhil" age={30} isStudent={true}/> {/* For learning Props*/}
+      <Student name="Patrick" age={40} isStudent={false}/>
+      <Student />
     </div>
+    
   )
 
 }
@@ -44,7 +49,7 @@ function PostComponent() {
   </div>
 }
 
-const styleProfileCard = {width: "300px", height: "400px", background: "#fff", borderRadius: "8px", marginLeft: "30px", marginTop: "-100px"}
+const styleProfileCard = {width: "300px", height: "400px", background: "#fff", borderRadius: "8px", marginLeft: "30px", marginTop: "-100px", fontFamily: "Arial, sans-serif"}
 
 function ProfileCardComponent(){
   return <div style={styleProfileCard}>
